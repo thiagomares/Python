@@ -29,10 +29,66 @@ print(pow(3))
 
 
 def mostra_info(nome='Thiago', instrutor=False):
-    if nome == 'Thiago' and instrutor == False:
-        print('Thiago')
+    if instrutor == False:
+        print(f'{nome}')
     else:
         print('Rala peito')
 
 
 mostra_info('Gustavo')
+# Se queremos que um parâmetros seja modificado, basta que endereçamos ela  dentro do argumento
+mostra_info(instrutor=True)
+
+"""
+    Por que utiliar parametros com valor defaut?
+
+        - Nos permite ser mais flexiveis com nossas funçoes
+        - Evita erros com parâmetros mais complexos complexos
+        - Nos permite trabalhar com exemplos mais legiveis no código
+
+    Quais tipos de dados que podemos utilizar como default de parâmetros?
+
+        Todos, desde dados primitivos como ints e floats até Funções
+
+    
+"""
+# Utilizando funções como parâmetros
+
+
+def teste(teste=mostra_info(input('Digite Olá mundo \n'))):
+    return teste
+
+
+teste()
+
+# Escopo = Evitando uns B.O. aí...
+# Variáveis Locais
+# Varíaveis globais
+
+nome = 'Thiago'  # Esta é uma variável global
+
+
+def diz_oi():
+    print(f'Oi, {nome}')
+
+
+diz_oi()
+
+# Utilizando variável local
+
+
+def diga_olá():
+    nome = 'Thalia'
+    print(f'Olá, {nome}')
+
+
+diga_olá()
+print(nome)
+
+"""
+    OBS: Se tiver uma variável local com o mesmo nome de uma variavel global, a variável local apenas modificará o que estiver dentro da função.
+
+    Se puder evitar variaveis globais, evite.
+
+    Em python, nos não podemos inicializar uma variável sem declarar-la anteriormente com um valor.
+"""
