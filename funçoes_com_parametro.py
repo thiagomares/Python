@@ -13,6 +13,7 @@
 '''
 
 # Exemplo de função com parametro
+''' comentário '''
 
 
 def Função(Parametro):
@@ -31,6 +32,8 @@ classe.outra_funcao('Thalia')
 
 # Refatorando uma funçao
 
+for item in range[1, 10]:
+    print(item)
 
 def Quadrado():
     return 7*7
@@ -45,6 +48,8 @@ print(valor_user)
 print(type(valor_user))
 
 # Função que soma dois valores
+
+
 def Pow(valor1, valor2):
     return valor1 + valor2
 
