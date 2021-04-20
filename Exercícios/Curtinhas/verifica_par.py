@@ -7,7 +7,7 @@ contador = 0
 while(contador <= 100):
 
     verificador = input('Verificando \n')
-    
+
     if verificador.isdigit():
 
         verificador = int(verificador)
