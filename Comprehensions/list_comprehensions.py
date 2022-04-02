@@ -44,3 +44,10 @@ print([letra.split() for letra in nome])
 
 nomes = ['thiago', 'gustavo', 'chislainy', 'marilany', 'josé']
 print([letrados.capitalize() for letrados in nomes])
+
+#  Nos podemos adicionar estruturas condicionais logicas nas nossas list comprehension
+
+numeros = [1, 2 , 3, 4, 5 ,6, 7, 8, 9, 10]
+
+print([numero for numero in numeros if numero % 2 == 0])
+print([numero for numero in numeros if numero % 2 != 0])

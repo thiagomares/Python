@@ -11,7 +11,7 @@
 
     Exemplo: queremos fazer uma soma de 3 valores, so que é fornecido um quarto valor e em condições normais este codigo irá retornar erro pois ele vai ter mais argumentos que ele poderia receber, contudo, se utilizarmos o *args, ele como se comporta como uma tupla, não tem problema receber varios e varios valores.
 """
-
+import pygame
 # Exemplo
 
 
