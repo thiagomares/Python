@@ -20,7 +20,7 @@ nomes = list(map(lambda names: names['nome'], dicionario))
 pesos = list(map(lambda weights: weights['peso'], dicionario))
 
 for i in range(0, len(dicionario)): # Estamos inserindo valores na nossa tabela
-    cursor.execute("INSERT INTO clientes (nome, peso) VALUES (?, ?)", (nomes[i], pesos[i]))
+    cursor.execute("INSERT INTO  clientes (nome, peso) VALUES (?, ?)", (nomes[i], pesos[i]))
 conn.commit()  # e aqui estamos enviando para a nossa tabela os valores
 
 # Atualizando o valor de alguma coisa

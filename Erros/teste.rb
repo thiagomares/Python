@@ -10,4 +10,6 @@ for valor in banco_de_dados.execute "SELECT * FROM clientes"
     puts id, nome, telefone
 end
 
+puts telefone if telefone == 31989190738
+
 banco_de_dados.close if banco_de_dados
