@@ -7,51 +7,42 @@ banco_de_dados.execute 'CREATE TABLE IF NOT EXISTS clientes
                         senha TEXT,
                         username TEXT)'
 
-# banco_de_dados.execute 'INSERT INTO clientes (nome, senha, username) VALUES (?, ?, ?)', name, senha_digitado, username
 puts '1- Para cadastro, 2 para login'
 menu = gets.chomp.to_i
 
-class Entrada
-  def cadastro(nome, usuario, senha)
+class BancoDeDados
+  attr_accessor :nome, :usuario, :senha
+
+  def cadastro
     banco_de_dados = SQLite3::Database.open 'Teste.db'
     banco_de_dados.execute 'INSERT INTO clientes (nome, username, senha) VALUES (?, ?, ?)', nome, usuario, senha
   end
 
-  def entrada(usuario, senha)
-    if usuario == username && senha == senha_digitado
-      puts "Olá, #{nome}"
-      puts id
+  def entrada
+    banco_de_dados = SQLite3::Database.open 'Teste.db'
+    for valor in banco_de_dados.execute 'SELECT nome, username, senha FROM clientes WHERE username LIKE ?', usuario
+      nome, username, password = valor
     end
+    puts "Olá, #{nome}" if usuario == username && password == senha
   end
 end
 
+bancodedados = BancoDeDados.new
+
 if menu == 1
   puts 'Digite seu nome'
-  name = gets.chomp
+  bancodedados.nome = gets.chomp
   puts 'digite seu usuário'
-  username = gets.chomp
+  bancodedados.usuario = gets.chomp
   puts 'Digite sua senha'
-  password = gets.chomp
-  cadastro = Entrada.new
-  cadastro.cadastro(name, username, password)
+  bancodedados.senha = gets.chomp
+  bancodedados.cadastro
 elsif menu == 2
   puts 'Digite seu usuário'
-  username = gets.chomp
-  for valor in banco_de_dados.execute 'SELECT * FROM clientes
-        WHERE username LIKE ?', username
-    id, nome, senha, usuario = valor
-  end
-  if username == usuario
-    puts 'digite sua senha'
-    password = gets.chomp
-    if password == senha
-      puts "Bem-vindo, #{nome}"
-    elsif password = !senha
-      puts 'Senha invalida'
-    end
-  elsif username = !usuario
-    puts 'Usuário não existe'
-  end
+  bancodedados.usuario = gets.chomp
+  puts 'Digite sua senha'
+  bancodedados.senha = gets.chomp
+  bancodedados.entrada
 end
 
 banco_de_dados.close
