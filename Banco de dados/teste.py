@@ -1,10 +1,25 @@
-import sqlite3  # Importando a lib de banco de dados
+import sqlite3 as sql
+import matplotlib as plt
 
-conn = sqlite3.connect('basededados.db')  # Conectando com a base de dados
-cursor = conn.cursor() 
+conector = sql.connect('Bancodedados.db')
+cursor = conector.cursor()
 
-cursor.execute('DELETE FROM clientes')
-conn.commit()
+# cursor.execute('CREATE TABLE IF NOT EXISTS valores ('
+#                'id INTEGER PRIMARY KEY AUTOINCREMENT',
+#                'dia INTEGER',
+#                'valor REAL'
+#                ')')
+
+dia = range(1, 11)
+valores = [10, 2, 3, 11, 3, 4, 10, 2, 3, 5]
+
+# for i in dia:
+#     cursor.execute('INSERT INTO valores (dia, valor) VALUES (?, ?)', (dia[i], valores))
+
+# plotagem = cursor.execute('SELECT valor FROM valores WHERE dia LIKE ?', (3))
+
+plt.plot(dia, valores)
+plt.show()
 
 cursor.close()
-conn.close()
+conector.close()

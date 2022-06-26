@@ -1,0 +1,2 @@
+require "azure/storage/table"
+
