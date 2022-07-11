@@ -7,3 +7,5 @@
     - Escrita
     
 '''
+
+print('olá, mundo')
