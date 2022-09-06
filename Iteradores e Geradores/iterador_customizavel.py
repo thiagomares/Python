@@ -21,6 +21,8 @@ class Contador:
         return self
     
     def __next__(self):
+        # Explicando essa pomba desse trem
+        """ Essa pomba desse trem vai guardar o ultimo valor e vai retornar esse numero quando requisitado """
         if self.menor < self.maior:
             numero = self.menor
             self.menor = self.menor + 1
