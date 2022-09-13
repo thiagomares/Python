@@ -1,5 +1,5 @@
 import sqlite3 as sql
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 conector = sql.connect('Bancodedados.db')
 cursor = conector.cursor()
