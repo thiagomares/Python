@@ -12,8 +12,7 @@
 """
 
 # Atributo de instancia
-""" 
-    Aqui nos vamos ver um método de instância, que é o método init (método construtor)
+"""     Aqui nos vamos ver um método de instância, que é o método init (método construtor)
     Método construtor: É um método especial que utilizamos para a construção do objeto
 """
 
