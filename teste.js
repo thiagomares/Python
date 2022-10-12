@@ -1,0 +1,1 @@
+// how to connect cosmosdb to javascript?
