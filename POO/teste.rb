@@ -49,4 +49,4 @@ puts p1.calcula_imposto + p1.acrescimo
 puts p1.contador
 
 p2 = Produto.new('PS5', 3500, 'Video Game')
-puts p2.contador
+puts "Ho\n" * 3

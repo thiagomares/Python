@@ -1,12 +1,11 @@
 {
     "configurations": [
         {
-          "type": "python-tests",
-          "name": "python",
-          "testFramework": "",
-          "target": "",
-          "arguments": [],
+            "type": "python",
+            "name": "tests",
+            "arguments": [file],
         },
+
 
     ]
 }

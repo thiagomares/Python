@@ -141,5 +141,5 @@ finally:
     print(p2.peso)
 
 #  Deletando atributos
-del p2.peso
-print(p2.peso)
+# del p2.peso
+# print(p2.peso)

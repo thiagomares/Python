@@ -1,38 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10c96684-6a22-4c78-b85a-6b80f55f348a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Decoradores/maior_grandeza.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Decoradores/maior_grandeza.ipynb" afterDir="false" />
+    <list default="true" id="7b08fcaf-bd9e-4177-9ace-b832f666b454" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vs/POO/FileContentIndex/aff5d52d-5e3c-4408-8c71-337188d9f4b2.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/POO/FileContentIndex/read.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/POO/v17/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/PythonSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstracao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jokenpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/match.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metodoefuncao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metodos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objetos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/treinoatributos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fleet/run.json" beforeDir="false" afterPath="$PROJECT_DIR$/.fleet/run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.fleet/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.fleet/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atributos.py" beforeDir="false" afterPath="$PROJECT_DIR$/atributos.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2G6GyfjcllzUK5OGhEX4dm42WFv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GCJa4XkSGenIm0gy4zhI14GCUj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "G:/Meu Drive/Backup/Python/POO"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="10c96684-6a22-4c78-b85a-6b80f55f348a" name="Changes" comment="" />
-      <created>1665701875728</created>
+      <changelist id="7b08fcaf-bd9e-4177-9ace-b832f666b454" name="Changes" comment="" />
+      <created>1665886696119</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665701875728</updated>
+      <updated>1665886696119</updated>
     </task>
     <servers />
   </component>
@@ -46,5 +77,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

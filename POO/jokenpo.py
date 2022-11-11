@@ -1,34 +1,40 @@
-import random
+﻿import random
+
+class Machine:
+    
+    def __init__(self, valor):
+        self.__valor = valor
+        self.__selecao = None
+
+    def maquina(self):
+        self.__selecao = random.choice(['pedra', 'papel', 'tesoura'])
+        return self.__selecao
+
+    def escolha(self):
+        if self.__valor == 'papel':
+            if self.__selecao == 'papel':
+                return 'empate'
+            elif self.__selecao == 'pedra':
+                return 'Venceu'
+            elif self.__selecao == 'tesoura':
+                return 'perdeu'
+        elif self.__valor == "tesoura":
+            if self.__selecao == 'papel':
+                return 'venceu'
+            elif self.__selecao == 'pedra':
+                return 'perdeu'
+            elif self.__selecao == 'tesoura':
+                return 'empate'
+        elif self.__valor == 'pedra':
+            if self.__selecao == 'papel':
+                return 'perdeu'
+            elif self.__selecao == 'pedra':
+                return 'empate'
+            elif self.__selecao == 'tesoura':
+                return 'tesoura'
 
 
-def maquina():
-    selecao = random.choice(['pedra', 'papel', 'tesoura'])
-    return selecao
-
-maquina = maquina()
 usuario = input('Escolha entre pedra, papel ou tesoura \n').lower()
-print(f'A maquina escolheu {maquina}')
-
-if usuario == 'papel':
-    if maquina == 'papel':
-        print('empate')
-    elif maquina == 'pedra':
-        print('Venceu')
-    elif maquina == 'tesoura':
-        print('perdeu')
-elif usuario == "tesoura":
-    if maquina == 'papel':
-        print('venceu')
-    elif maquina == 'pedra':
-        print('perdeu')
-    elif maquina == 'tesoura':
-        print('empate')
-elif usuario == 'pedra':
-    if maquina == 'papel':
-        print('perdeu')
-    elif maquina == 'pedra':
-        print('empate')
-    elif maquina == 'tesoura':
-        print('tesoura')
-
-
+maquina = Machine(usuario)
+print(f'A maquina escolheu {maquina.maquina()}')
+print(f'Você {maquina.escolha()}')
