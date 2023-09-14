@@ -25,12 +25,17 @@
         assertNotIn(a, b) => a nao está em b
         assertIsInstance(a,b) => a é instancia de b
         assertNotIsInstance(a, b) => a não é instancia de b
+        
+    Nos primeiro fazemos o teste para depois criar o método
+    
+    Por convenção, todos os testes em um test case devem ter seu nome iniciado com test_
 '''
 
 # Utilizando a abordagem tdd
 
 def comer(comida, saudavel):
-    pass
+    assert saudavel == True, 'Eu vou morrer mesmo'
+    return f'estou comendo {comida} porque eu gosto'
 
 def dormir(horas):
     pass
