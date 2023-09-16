@@ -20,3 +20,32 @@ print(sys.getrefcount(a))
 """ 
     O deadlock é quando um lock deixa de existir e o lock está nele, e nisso travamos nosso programa
 """
+
+# Criando um single thread
+import time
+from threading import Thread
+
+CONTADOR = 50_000_000
+
+def contagem_regressiva(valor):
+    while valor > 0:
+        valor -= 1
+
+inicio = time.time()
+contagem_regressiva(CONTADOR)
+fim = time.time()
+
+print(f'Time delta: {fim - inicio}')
+
+# Usando multithreads
+t1 = Thread(target=contagem_regressiva, args=(CONTADOR//2,))
+t2 = Thread(target=contagem_regressiva, args=(CONTADOR//2,))
+
+inicio = time.time()
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+fim = time.time()
+
+print(f'Time delta: {fim - inicio}')
