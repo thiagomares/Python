@@ -1,5 +1,9 @@
 {
     "configurations": [
-        
+        {
+            "type": "python",
+            "name": "Teste",
+            "file": "$FILE$",
+        },
     ]
 }
